@@ -1,0 +1,139 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+
+@font-face {
+    font-family: 'immoralregular';
+    src: url('immoral-webfont.woff2') format('woff2'),
+         url('immoral-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+html{
+    background-image: url("../images/mask-pixabay.jpg");
+}
+
+body{
+    min-height:1000px;
+    display:grid;
+    grid-template-columns: 50px 3fr 1fr;
+    grid-template-rows:50px 1fr 80px;
+    background-image: url("../images/steampunk-gears-bg.jpg");
+    font-family: 'immoralregular';
+    justify-content: center;
+}
+
+hr{
+    width:50%;
+    margin:.5em auto;
+    display:block;
+}
+
+#nav{
+     background-color: #C1C1C1;
+     width:50px;
+     height: 100%;
+     padding:3px 1px;
+     transition: 0.5s;
+     border-radius: 0 2px 2px 0;
+     overflow-x:hidden;
+     position:fixed;
+     top:0;
+     left:0;
+     z-index: 1;
+     
+}
+
+#navContent{
+    position: relative;
+    top:60px;
+    display:flex;
+    flex-direction: column;
+    align-items: flex-end;
+    font-size: 1.5em;
+}
+
+#spinner{
+    float: right;
+}
+
+header{
+    min-height:50px;
+    width:100%;
+    background-color:#313131;
+    position: absolute;
+    top:0;
+    left:50px;
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size:30px;
+}
+
+article{
+    position:absolute;
+    top:50px;
+    left:50px;
+    width:100%;
+    display: flex;
+    align-items: center;
+    background-color: rgba(161, 161, 161, 0.5);
+    
+    min-height:870px;
+    grid-column-start: 2;
+    
+}
+
+aside{
+    grid-column-start: 3;
+    grid-row: 2;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+
+}
+
+footer{
+    grid-column: 2;
+    grid-row: 3;
+    color:#818181;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+footer a {
+    text-decoration: none;
+    color: #C1C1C1;
+}
+
+.thumbPhotos{
+    width:75px;
+
+}
+
+#title{
+    font-size: 75px;
+    color:#212121;
+    opacity:200;
+}
+
+#main{
+    display:flex;
+    flex-direction:column;
+}
+
+#about{
+    width:60%;
+    display:block;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+#slides{
+    /* width:60%; */
+    height:500px;
+}
